@@ -11,7 +11,6 @@ Date: 20.03.2026
 """
 
 
-
 import math
 
 from  base.input import  input_in_task1, repeat_task
@@ -33,8 +32,8 @@ def calculate_function_with_step_row(x, eps):
     func_sum=0
     number=1
     
-    while abs(number) >= eps and n < 500:
-        x = x % (2 * math.pi) 
+    x = x % (2 * math.pi)
+    while abs(number) >= eps and n < 500: 
         func_sum += number
         n += 1
         number = number * (-x**2) / ((2*n - 1) * (2*n))
@@ -44,6 +43,13 @@ def calculate_function_with_step_row(x, eps):
     return n, func_sum, math_sum
 
 def run_task1():
+    """
+    Release the execution of Task 1
+    
+    input
+    calculation of cos(x)
+    output.
+    """
     while True: 
         x, eps =  input_in_task1()
         n, fx, math_fx = calculate_function_with_step_row(x, eps)

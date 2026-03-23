@@ -17,7 +17,7 @@ from base.output import output_in_task2
 
 def find_amount_of_numbers_in_sequence(size_of_collection):
     """Counts integers less than 10 in a sequence until the number 100 is encountered.
-
+    
     Args:
         number_collection (list of int): A sequence of integer numbers. 
 
@@ -38,6 +38,13 @@ def find_amount_of_numbers_in_sequence(size_of_collection):
 
 
 def run_task2():
+    """
+    Release the execution of Task 2
+    
+    It asks the user for the list size and how to fill it (by user or by generator).
+    Then it counts numbers smaller than 10 and shows the result.
+    It also asks if the user wants to repeat the task.
+    """
     while True:
         while True:
             number_of_elements=val.get_int_input("\nInput number of elements of collection\n")

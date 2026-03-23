@@ -18,6 +18,16 @@ from base.output import output_in_task5
 
 
 def find_amount_of_numbers_grater_than_c(number_collection, c):
+    """
+    Counts how many positive numbers in a list are greater than c.
+
+    Args:
+        number_collection (list): A list of numbers.
+        c (float): The  number c.
+
+    Returns:
+        int: The amount of numbers greater than c.
+    """
     amount_of_numbers_greater_than_c=0
     for number in number_collection:
         if number > c and number > 0:
@@ -25,7 +35,16 @@ def find_amount_of_numbers_grater_than_c(number_collection, c):
     return amount_of_numbers_greater_than_c
 
 
-def find_mul_elements(number_collection): 
+def find_mul_elements(number_collection):
+    """
+    Finds the number with the largest absolute value, then multiplies all numbers after it.
+
+    Args:
+        number_collection (list): A list of numbers.
+
+    Returns:
+        float or None: The multiplication result, or None if the largest number is the last one.
+    """
     max_abs_el = max(number_collection, key=abs)
     max_index = number_collection.index(max_abs_el)
     
@@ -42,6 +61,13 @@ def find_mul_elements(number_collection):
     
 
 def run_task5():
+    """
+    Release the execution of Task 5.
+    
+    It asks the user for the list size and how to fill it with numbers.
+    Then it asks for a number c, calculates the results using the other functions, and shows them.
+    It also asks if the user wants to repeat the task.
+    """
     while True:
         while True:
             number_of_elements=get_int_input("\nInput number of elements of collection\n")
