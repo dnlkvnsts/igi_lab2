@@ -40,7 +40,7 @@ def calculate_numbers_of_lowerletters_and_digits(text):
 def run_task3():
     while True:
         while True:
-            length_of_string = get_int_input("\nInput the length of the string\n")
+            length_of_string = get_int_input("\nInput the length of the string for initialize by generator function\n")
             
             if length_of_string > 0:
                 break

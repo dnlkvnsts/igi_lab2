@@ -1,12 +1,20 @@
+"""
+Realise two function: one function find amount of numbers greater than c,
+second function  find mul of elements after max(abs(element))
 
+
+Lab 3. Standard data types, collections, functions, and modules in Python.
+
+Version: 1
+
+Developer: Danilkova Anastasia Alexandrovna
+
+Date: 23.03.2026
+"""
 
 from base.validation import get_int_input, get_float_input
-
 import base.input as inp
-
 from base.output import output_in_task5
-
-
 
 
 def find_amount_of_numbers_grater_than_c(number_collection, c):

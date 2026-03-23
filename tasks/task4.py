@@ -1,4 +1,16 @@
+"""
+Realise three function: one function find amount of words start with consonant,
+second function  find words with two consecutive letter with their order
+and the third function sort words in alphabetical order
 
+Lab 3. Standard data types, collections, functions, and modules in Python.
+
+Version: 1
+
+Developer: Danilkova Anastasia Alexandrovna
+
+Date: 23.03.2026
+"""
 
 from base.output import output_in_task4
 from base.input import repeat_task
